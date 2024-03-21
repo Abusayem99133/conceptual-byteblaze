@@ -7,7 +7,7 @@ const Hero = () => {
         <div className="">
           <h1 className="text-5xl font-bold">
             Welcome to{" "}
-            <span className="bg-gradient-to-r from-orange-700 via-blue-500 to-green-400 text-transparent bg-clip-text animate-gradient">
+            <span className="bg-gradient-to-r bg-300% from-primary via-blue-500 to-secondary text-transparent bg-clip-text animate-gradient">
               ByteBlaze
             </span>
           </h1>
