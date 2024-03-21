@@ -1,14 +1,9 @@
-import Navbars from "../Components/Navbars/Navbars";
-import Blogs from "./Blogs";
-import Bookmarks from "./Bookmarks";
+import Hero from "../Components/Navbars/Hero";
 
 const Home = () => {
   return (
-    <div>
-      <div className="">{/* <Navbars></Navbars> */}</div>
-      <h1>Homepage</h1>
-      {/* <Blogs></Blogs> */}
-      {/* <Bookmarks></Bookmarks> */}
+    <div className="flex flex-col items-center justify-center min-h-[calc(100vh-120px)]">
+      <Hero></Hero>
     </div>
   );
 };
