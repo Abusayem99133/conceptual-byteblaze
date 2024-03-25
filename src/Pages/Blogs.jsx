@@ -1,4 +1,4 @@
-import { useLoaderData } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 
 import BlogCard from "../Components/Navbars/BlogCard/BlogCard";
 
@@ -8,9 +8,8 @@ const Blogs = () => {
   return (
     <section className=" text-gray-100">
       <div className="container max-w-6xl p-6 mx-auto space-y-6 sm:space-y-12">
-        <a
-          rel="noopener noreferrer"
-          href="#"
+        <Link
+          to={`/blog/${blogs[0].id}`}
           className="block max-w-sm gap-3 mx-auto sm:max-w-full group hover:no-underline focus:no-underline lg:grid lg:grid-cols-12 bg-gray-900"
         >
           <img
@@ -27,7 +26,7 @@ const Blogs = () => {
             </span>
             <p>{blogs[0].description}</p>
           </div>
-        </a>
+        </Link>
         <div className="grid justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {blogs.slice(1, 19).map((blog) => (
             <BlogCard key={blog.id} blog={blog}></BlogCard>
