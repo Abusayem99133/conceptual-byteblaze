@@ -1,6 +1,6 @@
 import { MdDeleteForever } from "react-icons/md";
 import { Link } from "react-router-dom";
-import { deleteBlog } from "../../../Utils";
+// import { deleteBlog } from "../../../Utils";
 
 const BlogCard = ({ blog, deletable, handleBookmark }) => {
   const { cover_image, title, description, published_at, id } = blog;
@@ -25,7 +25,7 @@ const BlogCard = ({ blog, deletable, handleBookmark }) => {
       </Link>
       {deletable && (
         <div
-          onClick={() => handleBookmark()}
+          onClick={() => handleBookmark(id)}
           className="absolute bg-primary p-3 rounded-full hover:scale-105 hover:bg-purple-400 -top-5 -right-5"
         >
           <MdDeleteForever
